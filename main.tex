@@ -1,0 +1,134 @@
+% !TEX encoding = UTF-8 Unicode
+\DocumentMetadata{%
+	pdfstandard=A-2b,% A-2b, A-2u, A-3b, or A-3u (don't use u options with LuaLaTeX)
+	pdfversion=1.4,
+	lang=en-US,
+}
+
+%% To omit final list of figures and tables, use the class option [nolists]
+\documentclass[nocopyright,upint,varvw,barcolor=black,mathalfa=cal=euler,balance,hyphenate, main=english, nolists]{asmejour} 
+
+\hypersetup{%
+	pdfauthor={Meredith Sutton, John Morris},
+	pdftitle={Implications of Representing Tradespace Behaviors Using Constraint Hypergraphs},
+	pdfkeywords={modeling, tradespace, hypergraphs},
+	pdfsubject = {Shows how some challenges of using a tradespace are addressed when represented by a constraint hypergraph},
+}
+
+%% Omit "Journal of"
+\JourName{Computing and Information Science in Engineering}
+
+\PaperYear{2025} 
+
+%% Custom Packages
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta}
+
+\setlength{\jot}{2pt}
+
+\usepackage{ragged2e}
+
+\definecolor{codegray}{rgb}{0.4,0.4,0.4}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.97}
+\usepackage{listings}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegray}\itshape,
+	keywordstyle=\bfseries,
+	keywordstyle=[2]\bfseries\itshape,
+    stringstyle=\color{codegray},
+    basicstyle=\ttfamily\footnotesize,
+	columns=flexible,
+    breaklines=true,
+    captionpos=t,
+    keepspaces=false,
+    numbers=none,
+	showspaces=false,
+	showtabs=false,
+    tabsize=2,
+	float=*
+	}
+\lstset{style=mystyle}
+\renewcommand{\lstlistingname}{Block}
+
+%%%%  end of preamble  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\SetAuthorBlock{Meredith Sutton}{%
+	Department of Mechanical Engineering,\\
+	Clemson University,\\
+	Clemson, SC USA\\
+	email: mgsutto@clemson.edu
+}
+\SetAuthorBlock{John Morris}{%
+	Department of Mechanical Engineering,\\
+	Clemson University,\\
+	Clemson, SC USA\\
+	email: jhmrrs@clemson.edu
+}
+\SetAuthorBlock{Cameron Turner}{%
+	Department of Mechanical Engineering,\\
+	Clemson University,\\
+	Clemson, SC USA\\
+	email: gmocko@clemson.edu
+}
+\SetAuthorBlock{Gregory Mocko}{%
+	Department of Mechanical Engineering,\\
+	Clemson University,\\
+	Clemson, SC USA\\
+	email: gmocko@clemson.edu
+}
+\SetAuthorBlock{John Wagner, P.E.\CorrespondingAuthor}{%
+	Clemson University,\\
+	Clemson, SC USA\\
+	email: jwagner@clemson.edu
+}
+
+\title{Implications of Representing Tradespace Behaviors Using Constraint Hypergraphs}
+\keywords{tradespace, system modeling, hypergraphs}
+
+\begin{abstract} % Abstract should be no more than 250 words
+	This is the abstract
+\end{abstract}
+
+\date{Version 0.1, May 1, 2025}
+
+\maketitle 
+
+\section{Introduction}
+This is the introduction
+
+\section{Review of Tradespace Exploration} \label{sec:tsreview}
+\textit{Assigned to Meredith}
+\subsection{Challenges of Exploring Tradespaces}
+Challenges of representing, visualizing, and using tradespaces effectively.
+\subsection{State of the Art}
+Alternatives for solving the above challenges.
+
+\section{Review of Constraint Hypergraphs} \label{sec:chgreview}
+\textit{Assigned to John}
+Also talk about systems modeling and behavior
+
+\section{System Modeling and Interoperability in the Tradespace Domain} \label{sec:modeling}
+\begin{itemize}
+	\item Review how models work in tradespace exploration
+	\item Goal of bringing performance models and decision models together
+	\item Dummy 3x3 example \textit{Assigned to John}
+\end{itemize}
+
+\section{Case Study} \label{sec:casestudy}
+Describe tradespace activities using the Microgrid (linked here \href{here}{https://github.com/jmorris335/MicrogridHg}, though I'll also include it here eventually.)
+
+\section{Discussion}
+Limitations, future work
+
+\section{Conclusion}
+This is the conclusion
+
+\nocite{*}
+\bibliographystyle{asmejour}
+\bibliography{library}
+
+\end{document}
+ 

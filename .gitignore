@@ -1,0 +1,28 @@
+# LaTeX aux files
+*.log
+*.fls
+*.fdb*
+*.bbl
+*.blg
+*.lof
+*.lot
+*.out
+*.synctex*
+*.aux
+*.DS_Store
+
+# Programmer
+*.dSYM*
+*.out
+
+# Dynamic outputs
+main.pdf
+manuscript.pdf
+.$*
+
+# Programmer files
+.vscode/
+SECRETS
+.zshrc
+scratchpaper/
+.venv/
